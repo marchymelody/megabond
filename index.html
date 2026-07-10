@@ -155,7 +155,7 @@
         <div class="flex items-center gap-2 bg-slate-900/50 border border-slate-800 rounded-xl px-3 py-1.5">
           <div class="relative">
             <img id="currentActiveAvatar" src="https://picsum.photos/seed/current/100/100" alt="Me" class="w-8 h-8 rounded-full border border-brand-500/40 object-cover">
-            <label id="headerPhotoUploadLabel" for="selfPhotoUpload" class="absolute -bottom-1 -right-1 w-5 h-5 bg-brand-600 hover:bg-brand-500 text-white rounded-full flex items-center justify-center cursor-pointer shadow-md transition-transform active:scale-95 hidden">
+            <label id="headerPhotoUploadLabel" for="selfPhotoUpload" class="absolute -bottom-1 -right-1 w-5 h-5 bg-brand-600 hover:bg-brand-500 text-white rounded-full flex items-center justify-center cursor-pointer transition-all hidden">
               <i class="fa-solid fa-camera text-[8px]"></i>
             </label>
             <input type="file" id="selfPhotoUpload" accept="image/*" class="hidden" onchange="handleSelfPhotoUpload(event)">
@@ -167,7 +167,7 @@
           </div>
         </div>
 
-        <button id="btnInstallApp" class="hidden bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white text-xs font-bold px-3 py-2 rounded-xl flex items-center gap-1.5 shadow-lg shadow-emerald-500/20 transition-all duration-300 hover:scale-105 active:scale-95">
+        <button id="btnInstallApp" class="hidden bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white text-xs font-bold px-3 py-2 rounded-xl flex items-center gap-1.5 transition-all shadow-lg shadow-emerald-500/20">
           <i class="fa-solid fa-download"></i> Pasang Aplikasi
         </button>
 
@@ -186,10 +186,10 @@
           <p class="text-xs text-slate-400">Kelola siswa, prestasi, penalti, dan perbarui foto profil dengan hak akses penuh.</p>
         </div>
         <div class="flex gap-2">
-          <button onclick="openAddStudentModal()" class="bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold px-4 py-2.5 rounded-xl flex items-center gap-1.5 transition-all shadow-lg shadow-brand-500/20 hover:scale-105">
+          <button onclick="openAddStudentModal()" class="bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold px-4 py-2.5 rounded-xl flex items-center gap-1.5 transition-all shadow-lg shadow-brand-500/20">
             <i class="fa-solid fa-user-plus"></i> Tambah Siswa Baru
           </button>
-          <button onclick="openTransactionModal()" class="bg-purple-900 hover:bg-purple-800 text-white text-xs font-bold px-4 py-2.5 rounded-xl flex items-center gap-1.5 transition-all shadow-lg shadow-purple-500/10 hover:scale-105">
+          <button onclick="openTransactionModal()" class="bg-purple-900 hover:bg-purple-800 text-white text-xs font-bold px-4 py-2.5 rounded-xl flex items-center gap-1.5 transition-all shadow-lg shadow-purple-500/10">
             <i class="fa-solid fa-star"></i> Kelola Prestasi / Penalti
           </button>
         </div>
@@ -275,7 +275,7 @@
                 <i class="fa-solid fa-star text-glow-gold"></i> <span id="p1-stars">0</span>
               </div>
             </div>
-            <div class="w-full h-24 sm:h-32 bg-gradient-to-b from-yellow-600/40 via-yellow-900/40 to-slate-950 border-t-2 border-yellow-500/50 rounded-t-xl mt-4 flex items-center justify-center shadow-2xl">
+            <div class="w-full h-24 sm:h-32 bg-gradient-to-b from-yellow-600/40 via-yellow-900/40 to-slate-950 border-t-2 border-yellow-500/50 rounded-t-xl mt-4 flex items-center justify-center shadow-lg">
               <span class="heading-font text-4xl sm:text-5xl font-black text-yellow-500/30">I</span>
             </div>
           </div>
@@ -308,11 +308,11 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           
-          <div id="card-rank-4" class="group bg-gradient-to-r from-slate-900/60 to-purple-950/30 border border-purple-900/30 hover:border-brand-500/40 rounded-2xl p-4 flex items-center justify-between cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-brand-950/50">
+          <div id="card-rank-4" class="group bg-gradient-to-r from-slate-900/60 to-purple-950/30 border border-purple-900/30 hover:border-brand-500/40 rounded-2xl p-4 flex items-center justify-between cursor-pointer transition-all">
             <div class="flex items-center gap-4">
               <div class="heading-font text-lg font-black text-slate-500 w-6">#4</div>
               <div class="relative">
-                <img id="p4-avatar" src="https://picsum.photos/seed/p4/100/100" class="w-14 h-14 rounded-full object-cover border-2 border-slate-800 group-hover:border-brand-400/50 transition-colors" alt="Rank 4">
+                <img id="p4-avatar" src="https://picsum.photos/seed/p4/100/100" class="w-14 h-14 rounded-full object-cover border-2 border-slate-800 group-hover:border-brand-400/50 transition-colors">
                 <div class="absolute -bottom-1 -right-1 w-5 h-5 bg-purple-900 text-purple-300 text-[10px] font-bold rounded-full flex items-center justify-center border border-purple-700">4</div>
               </div>
               <div>
@@ -330,11 +330,11 @@
             </div>
           </div>
 
-          <div id="card-rank-5" class="group bg-gradient-to-r from-slate-900/60 to-purple-950/30 border border-purple-900/30 hover:border-brand-500/40 rounded-2xl p-4 flex items-center justify-between cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-brand-950/50">
+          <div id="card-rank-5" class="group bg-gradient-to-r from-slate-900/60 to-purple-950/30 border border-purple-900/30 hover:border-brand-500/40 rounded-2xl p-4 flex items-center justify-between cursor-pointer transition-all">
             <div class="flex items-center gap-4">
               <div class="heading-font text-lg font-black text-slate-500 w-6">#5</div>
               <div class="relative">
-                <img id="p5-avatar" src="https://picsum.photos/seed/p5/100/100" class="w-14 h-14 rounded-full object-cover border-2 border-slate-800 group-hover:border-brand-400/50 transition-colors" alt="Rank 5">
+                <img id="p5-avatar" src="https://picsum.photos/seed/p5/100/100" class="w-14 h-14 rounded-full object-cover border-2 border-slate-800 group-hover:border-brand-400/50 transition-colors">
                 <div class="absolute -bottom-1 -right-1 w-5 h-5 bg-purple-900 text-purple-300 text-[10px] font-bold rounded-full flex items-center justify-center border border-purple-700">5</div>
               </div>
               <div>
@@ -365,7 +365,7 @@
         <div class="flex gap-2">
           <div class="relative flex-grow">
             <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-slate-500 text-xs"></i>
-            <input type="text" id="studentSearch" oninput="renderLeaderboard()" placeholder="Cari nama siswa..." class="w-full bg-slate-950/60 border border-slate-800 text-slate-200 pl-9 pr-4 py-2 rounded-xl text-xs focus:outline-none focus:ring-1 focus:ring-brand-500">
+            <input type="text" id="studentSearch" oninput="renderLeaderboard()" placeholder="Cari nama siswa..." class="w-full bg-slate-950/60 border border-slate-800 text-slate-200 pl-9 pr-4 py-2.5 text-xs rounded-xl focus:outline-none focus:ring-1 focus:ring-brand-500">
           </div>
           <select id="tierFilter" onchange="renderLeaderboard()" class="bg-slate-950/60 border border-slate-800 text-slate-300 px-3 py-2 rounded-xl text-xs focus:outline-none focus:ring-1 focus:ring-brand-500">
             <option value="all">Semua Tier</option>
@@ -396,7 +396,7 @@
         <div class="flex items-center gap-4 mt-2">
           <div class="relative group">
             <img id="modalAvatar" src="https://picsum.photos/seed/p1/150/150" class="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover border-4 border-white/20" alt="Avatar">
-            <label id="modalPhotoUploadLabel" class="absolute inset-0 bg-black/60 rounded-full flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 cursor-pointer transition-opacity duration-200">
+            <label id="modalPhotoUploadLabel" class="absolute inset-0 bg-black/60 rounded-full flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 cursor-pointer transition-all hidden">
               <i class="fa-solid fa-camera text-white text-xs mb-1"></i>
               <span class="text-[8px] text-white">Ganti Foto</span>
               <input type="file" id="modalPhotoUploadInput" accept="image/*" class="hidden" onchange="handleModalPhotoUpload(event)">
@@ -440,7 +440,7 @@
         </div>
 
         <div id="modalAdminDeleteBtnContainer" class="hidden pt-4 border-t border-slate-800/80">
-          <button id="btnDeleteStudent" class="w-full bg-rose-950/30 hover:bg-rose-900/30 text-rose-500 hover:text-rose-400 border border-rose-900/40 py-2.5 rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-2">
+          <button id="btnDeleteStudent" class="w-full bg-rose-950/30 hover:bg-rose-900/30 text-rose-500 hover:text-rose-400 border border-rose-900/40 py-2.5 rounded-xl text-xs font-bold transition-all">
             <i class="fa-solid fa-trash-can"></i> Hapus Siswa dari Sistem
           </button>
         </div>
@@ -458,7 +458,7 @@
       <form id="addStudentForm" onsubmit="handleAddStudent(event)" class="p-6 space-y-4">
         <div>
           <label class="block text-xs font-bold text-slate-400 mb-1.5 uppercase">Nama Lengkap Siswa</label>
-          <input type="text" id="newStudentName" required="" placeholder="Contoh: Andi Wijaya" class="w-full bg-slate-950 border border-slate-800 text-slate-100 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-1 focus:ring-brand-500">
+          <input type="text" id="newStudentName" required placeholder="Contoh: Andi Wijaya" class="w-full bg-slate-950 border border-slate-800 text-slate-100 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-1 focus:ring-brand-500">
         </div>
         <div>
           <label class="block text-xs font-bold text-slate-400 mb-1.5 uppercase">Bintang Awal</label>
@@ -468,7 +468,7 @@
           <label class="block text-xs font-bold text-slate-400 mb-1.5 uppercase">Foto Profil Default</label>
           <div class="grid grid-cols-4 gap-2">
             <label class="cursor-pointer relative rounded-xl overflow-hidden border-2 border-transparent hover:border-brand-500">
-              <input type="radio" name="avatarOption" value="seed1" checked="" class="hidden peer">
+              <input type="radio" name="avatarOption" value="seed1" checked class="hidden peer">
               <img src="https://picsum.photos/seed/seed1/100/100" class="w-full h-12 object-cover" alt="Preset 1">
               <div class="absolute inset-0 bg-brand-600/30 opacity-0 peer-checked:opacity-100 flex items-center justify-center"><i class="fa-solid fa-check text-white"></i></div>
             </label>
@@ -508,29 +508,29 @@
       <form id="transactionForm" onsubmit="handleTransactionSubmit(event)" class="p-6 space-y-4">
         <div>
           <label class="block text-xs font-bold text-slate-400 mb-1.5 uppercase">Pilih Siswa</label>
-          <select id="transactionStudentSelect" required="" class="w-full bg-slate-950 border border-slate-800 text-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-1 focus:ring-brand-500">
+          <select id="transactionStudentSelect" required class="w-full bg-slate-950 border border-slate-800 text-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-1 focus:ring-brand-500">
           </select>
         </div>
         <div>
           <label class="block text-xs font-bold text-slate-400 mb-1.5 uppercase">Kategori Catatan</label>
           <div class="grid grid-cols-2 gap-2">
-            <button type="button" id="typeAchievementBtn" onclick="setTransactionType('achievement')" class="py-2.5 rounded-xl border border-emerald-500/30 bg-emerald-950/20 text-emerald-400 text-xs font-bold flex items-center justify-center gap-1.5 w-full text-center">
+            <button type="button" id="typeAchievementBtn" onclick="setTransactionType('achievement')" class="py-2.5 rounded-xl border border-emerald-500/30 bg-emerald-950/20 text-emerald-400 text-xs font-bold w-full text-center transition-all">
               <i class="fa-solid fa-award"></i> Prestasi Emas
             </button>
-            <button type="button" id="typePenaltyBtn" onclick="setTransactionType('penalty')" class="py-2.5 rounded-xl border border-slate-800 bg-transparent text-slate-400 text-xs font-medium flex items-center justify-center gap-1.5 w-full text-center">
+            <button type="button" id="typePenaltyBtn" onclick="setTransactionType('penalty')" class="py-2.5 rounded-xl border border-slate-800 bg-transparent text-slate-400 text-xs font-medium w-full text-center transition-all">
               <i class="fa-solid fa-circle-minus"></i> Penalti / Pelanggaran
             </button>
           </div>
         </div>
         <div>
           <label class="block text-xs font-bold text-slate-400 mb-1.5 uppercase">Jumlah Bintang Berubah</label>
-          <input type="number" id="transactionStars" min="1" value="1" required="" class="w-full bg-slate-950 border border-slate-800 text-slate-100 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-1 focus:ring-brand-500">
+          <input type="number" id="transactionStars" min="1" value="1" required class="w-full bg-slate-950 border border-slate-800 text-slate-100 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-1 focus:ring-brand-500">
         </div>
         <div>
           <label class="block text-xs font-bold text-slate-400 mb-1.5 uppercase">Keterangan / Catatan Alasan</label>
-          <textarea id="transactionNote" required="" rows="3" placeholder="Contoh: Juara 1 Lomba Pidato Bahasa Arab" class="w-full bg-slate-950 border border-slate-800 text-slate-100 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-1 focus:ring-brand-500"></textarea>
+          <textarea id="transactionNote" required rows="3" placeholder="Contoh: Juara 1 Lomba Pidato Bahasa Arab" class="w-full bg-slate-950 border border-slate-800 text-slate-100 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-1 focus:ring-brand-500"></textarea>
         </div>
-        <button type="submit" class="w-full bg-brand-600 hover:bg-brand-500 text-white py-3 rounded-xl text-xs font-bold transition-all hover:shadow-lg hover:shadow-brand-500/20">Konfirmasi Simpan Log</button>
+        <button type="submit" class="w-full bg-brand-600 hover:bg-brand-500 text-white py-3 rounded-xl text-xs font-bold transition-all hover:shadow-lg hover:shadow-brand-500/20">Konfirmasi Simpan</button>
       </form>
     </div>
   </div>
@@ -541,33 +541,43 @@
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script>
-    // Konfigurasi Database Supabase Langsung Terpasang
+    // Konfigurasi Database Supabase
     const SUPABASE_URL = "https://wunbsworstbbyuxunvst.supabase.co";
-    const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind1bmJzd29yc3RiYnl1eHVudnN0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDIzMTAyMDcsImV4cCI6MjA1Nzg4NjIwN30.8iZ31uR8vA_gA-zYp2p9y1z6q2q9y1z6q2q9y1z6q2q";
-    const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-
-    // Password Admin default yang dikembalikan
+    const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind1bmJzd29yc3RiYnl1eHVudnN0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDIzMTAyMDcsImV4cCI6MjA1Nzg4NjIwN30.X0mH0vV8PaQqKm-rL5WvO-gLvQUdkwLnE2XfyKZ5N-M";
+    
+    // Password Admin default
     const ADMIN_PASSWORD = "admin";
 
+    // Global variables
+    let supabase;
     let currentRole = "user";
     let studentsData = [];
     let activeStudentId = null;
     let currentTransactionType = "achievement";
 
+    // Initialize Supabase on page load
     document.addEventListener("DOMContentLoaded", async () => {
-      setupPWA();
-      await fetchStudentsFromSupabase();
-      
-      // Real-time listener Supabase
-      supabase
-        .channel('schema-db-changes')
-        .on('postgres_changes', { event: '*', schema: 'public', table: 'students' }, async () => {
-          await fetchStudentsFromSupabase();
-        })
-        .on('postgres_changes', { event: '*', schema: 'public', table: 'history' }, async () => {
-          await fetchStudentsFromSupabase();
-        })
-        .subscribe();
+      try {
+        // FIXED: Correct Supabase client initialization
+        const { createClient } = window.supabase;
+        supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+        
+        setupPWA();
+        await fetchStudentsFromSupabase();
+        
+        // Real-time listener Supabase
+        supabase
+          .channel('schema-db-changes')
+          .on('postgres_changes', { event: '*', schema: 'public', table: 'students' }, async () => {
+            await fetchStudentsFromSupabase();
+          })
+          .on('postgres_changes', { event: '*', schema: 'public', table: 'history' }, async () => {
+            await fetchStudentsFromSupabase();
+          })
+          .subscribe();
+      } catch (err) {
+        console.error("Error initializing app:", err);
+      }
     });
 
     async function fetchStudentsFromSupabase() {
@@ -659,24 +669,15 @@
       // Render Rank 4 & 5
       for (let i = 4; i <= 5; i++) {
         const student = studentsData[i - 1];
-        const card = document.getElementById(`card-rank-4`);
-        const card5 = document.getElementById(`card-rank-5`);
+        const card = document.getElementById(`card-rank-${i}`);
         
-        if (i === 4 && student && card) {
-          document.getElementById('p4-name').innerText = student.name;
-          document.getElementById('p4-stars').innerText = student.stars;
-          document.getElementById('p4-avatar').src = getAvatarUrl(student.avatar);
+        if (student && card) {
+          document.getElementById(`p${i}-name`).innerText = student.name;
+          document.getElementById(`p${i}-stars`).innerText = student.stars;
+          document.getElementById(`p${i}-avatar`).src = getAvatarUrl(student.avatar);
           const tier = determineTier(student.stars);
-          document.getElementById('p4-badge').innerText = tier.name;
+          document.getElementById(`p${i}-badge`).innerText = tier.name;
           card.onclick = () => viewUserDetailByObjId(student.id);
-        }
-        if (i === 5 && student && card5) {
-          document.getElementById('p5-name').innerText = student.name;
-          document.getElementById('p5-stars').innerText = student.stars;
-          document.getElementById('p5-avatar').src = getAvatarUrl(student.avatar);
-          const tier = determineTier(student.stars);
-          document.getElementById('p5-badge').innerText = tier.name;
-          card5.onclick = () => viewUserDetailByObjId(student.id);
         }
       }
     }
@@ -728,7 +729,6 @@
       document.getElementById('modalTierName').innerText = tier.name;
       document.getElementById('modalTotalStarsText').innerHTML = `<i class="fa-solid fa-star"></i> ${student.stars} Bintang`;
 
-      // Draw star indicator nodes
       const starIconsContainer = document.getElementById('modalStarIcons');
       starIconsContainer.innerHTML = "";
       const activeCount = student.stars % 5 || (student.stars > 0 ? 5 : 0);
@@ -739,7 +739,6 @@
       document.getElementById('currentTierLevel').innerText = tier.name;
       document.getElementById('nextTierLevel').innerText = `Target Selanjutnya`;
 
-      // Timeline Logs
       const timelineContainer = document.getElementById('modalHistoryTimeline');
       timelineContainer.innerHTML = "<p class='text-xs text-slate-500'>Memuat riwayat...</p>";
 
@@ -866,11 +865,11 @@
       const achBtn = document.getElementById('typeAchievementBtn');
       const penBtn = document.getElementById('typePenaltyBtn');
       if (type === 'achievement') {
-        achBtn.className = "py-2.5 rounded-xl border border-emerald-500/30 bg-emerald-950/20 text-emerald-400 text-xs font-bold w-full text-center";
-        penBtn.className = "py-2.5 rounded-xl border border-slate-800 bg-transparent text-slate-400 text-xs font-medium w-full text-center";
+        achBtn.className = "py-2.5 rounded-xl border border-emerald-500/30 bg-emerald-950/20 text-emerald-400 text-xs font-bold w-full text-center transition-all";
+        penBtn.className = "py-2.5 rounded-xl border border-slate-800 bg-transparent text-slate-400 text-xs font-medium w-full text-center transition-all";
       } else {
-        penBtn.className = "py-2.5 rounded-xl border border-rose-500/30 bg-rose-950/20 text-rose-400 text-xs font-bold w-full text-center";
-        achBtn.className = "py-2.5 rounded-xl border border-slate-800 bg-transparent text-slate-400 text-xs font-medium w-full text-center";
+        penBtn.className = "py-2.5 rounded-xl border border-rose-500/30 bg-rose-950/20 text-rose-400 text-xs font-bold w-full text-center transition-all";
+        achBtn.className = "py-2.5 rounded-xl border border-slate-800 bg-transparent text-slate-400 text-xs font-medium w-full text-center transition-all";
       }
     }
 
@@ -905,7 +904,6 @@
       }
     }
 
-    // Pemrosesan unggah berkas Base64 untuk foto profil siswa (Admin Mode)
     function handleSelfPhotoUpload(event) {
       const file = event.target.files[0];
       if (!file || !activeStudentId) return;
@@ -927,7 +925,6 @@
     }
 
     function handleModalPhotoUpload(event) {
-      // Sama seperti di atas untuk modal upload
       const file = event.target.files[0];
       if (!file) return;
       alert("Fasilitas unggah gambar siap digunakan dalam mode Admin.");
@@ -946,7 +943,6 @@
     function closeTransactionModal() { document.getElementById('transactionModal').classList.add('hidden'); }
     function closeUserDetailModal() { document.getElementById('userDetailModal').classList.add('hidden'); }
 
-    // PWA ENGINE
     let deferredPrompt;
     function setupPWA() {
       const btnInstall = document.getElementById('btnInstallApp');
